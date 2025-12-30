@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Garante que tudo fique acima do vídeo */
+nav, main {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}   
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: #3A9D98;
+    border: 2px solid #3A9D98;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    height: 50px;
+    width: 271px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    background-color: #3A9D98;
+    color: #fff;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    height: calc(100vh - 350px); /* Ajusta a altura considerando a navbar */
+    gap: 5px;
+}
+
+.hero h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.advantage-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    padding-top: 25%;
+    background-color: transparent;
+}
+
+.icones {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    background-color: #3A9D98;
+    border-radius: 30%;
+    padding: 20px;
+}
