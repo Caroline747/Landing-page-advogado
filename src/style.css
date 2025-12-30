@@ -111,3 +111,92 @@ button a {
     border-radius: 30%;
     padding: 20px;
 }
+
+.fundo-sobre {
+    height: 100vh;
+    background-image: 
+        linear-gradient(
+            rgba(241, 230, 208, 0.9),
+            rgba(241, 230, 208, 0.9)
+        ),
+        url("/img/fundo-sobre.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.card-principal {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.sobre-h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    font-weight: semi-bold;
+}
+
+.card-img {
+    height: 465px;
+    object-fit: cover;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.card-img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        #07323F8C 55%,
+        transparent 70%
+    );
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        #07323FDE 0%,
+        transparent 80%
+    );
+
+}
+
+.cartao h5 {
+    font-weight: semi-bold;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.cartao p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.cartao span {
+    background-color: #3A9D98;
+    border-radius: 40%;
+    padding: 15px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
