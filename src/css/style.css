@@ -284,8 +284,11 @@ button.btn-link {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #3A9D98;
-  color: #fff;
+  background-color: #F1E6D0;
+  border-radius: 13px;
+  color: #07323f;
+  border: none;
+  box-shadow: none;
 }
 
 .accordion-body {
@@ -296,4 +299,8 @@ button.btn-link {
 .accordion-body p {
   margin: 0;
 }
+
+
+
+
 
