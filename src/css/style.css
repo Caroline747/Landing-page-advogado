@@ -9,8 +9,8 @@
 body,
 html {
   font-family: "Open Sans", sans-serif;
-  height: 100vh;
-}
+  min-height: 100vh;
+} 
 
 /* Página Principal */
 
@@ -80,9 +80,10 @@ button a {
   align-items: center;
   color: #fff;
   text-align: center;
-  height: calc(100vh - 350px); /* Ajusta a altura considerando a navbar */
+  min-height: 60vh;
+  padding: 6rem 1rem 4rem; /* Usa espaçamento em vez de altura fixa */
   gap: 5px;
-}
+} 
 
 .hero h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -226,10 +227,12 @@ button a {
 }
 
 .card-img-numero {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  left: 50%;
   z-index: 2;
-}
+  max-width: 100%;
+} 
 
 button.btn-link {
     display: flex;
@@ -299,6 +302,31 @@ button.btn-link {
 .accordion-body p {
   margin: 0;
 }
+
+/* Ajustes responsivos */
+.logo {
+  max-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .icones {
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+  .cartao-como {
+    padding-top: 30%;
+  }
+  .logo {
+    max-height: 45px;
+  }
+}
+
 
 
 
