@@ -188,7 +188,7 @@ button a {
 
 .cartao span {
   background-color: #3a9d98;
-  border-radius: 40%;
+  border-radius: 100%;
   padding: 15px;
   width: fit-content;
   margin-bottom: 15px;
@@ -197,7 +197,7 @@ button a {
 /* Página Como Funciona */
 
 .fundo-como {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(7, 40, 59, 0.9), rgba(7, 40, 59, 0.9)),
     url("/img/como-fundo.jpg");
   background-size: cover;
