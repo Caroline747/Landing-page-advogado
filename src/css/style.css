@@ -229,9 +229,9 @@ button a {
 
 .card-img-numero {
   display: block;
-  margin-left: auto; /* força alinhamento à direita */
+  margin-left: auto; 
   margin-right: 0;
-  position: relative; /* ou keep default */
+  position: relative; 
   max-width: 100%;
   z-index: 2;
 }
@@ -256,7 +256,7 @@ button.btn-link {
   border-radius: 8px;
 }
 
-.sobre-section .btn-link {
+.sobre-section .btn-sobre {
   padding: 0;
 }
 
@@ -269,7 +269,7 @@ button.btn-link {
 /* Página Perguntas Frequentes */
 
 .fundo-perguntas {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
       rgba(58, 157, 152, 0.9),
       rgba(7, 40, 59, 0.9)
