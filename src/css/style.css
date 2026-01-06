@@ -10,7 +10,7 @@ body,
 html {
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
-} 
+}
 
 /* Página Principal */
 
@@ -84,7 +84,7 @@ button a {
   text-align: center;
   padding: 3rem 1rem 4rem;
   gap: 5px;
-} 
+}
 
 .hero h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -107,7 +107,7 @@ button a {
 }
 
 .icones {
-  font-size: 1.5rem!important;
+  font-size: 1.5rem !important;
   margin-bottom: 15px;
   background-color: #3a9d98;
   border-radius: 30%;
@@ -229,16 +229,17 @@ button a {
 
 .card-img-numero {
   display: block;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
+  margin-left: auto; /* força alinhamento à direita */
+  margin-right: 0;
+  position: relative; /* ou keep default */
   max-width: 100%;
-} 
+  z-index: 2;
+}
 
 button.btn-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Página Nos*/
@@ -269,7 +270,10 @@ button.btn-link {
 
 .fundo-perguntas {
   height: 100vh;
-  background-image: linear-gradient(rgba(58, 157, 152, 0.9), rgba(7, 40, 59, 0.9)),
+  background-image: linear-gradient(
+      rgba(58, 157, 152, 0.9),
+      rgba(7, 40, 59, 0.9)
+    ),
     url("/img/fundo-pergunta.jpg");
   background-size: cover;
   background-position: center;
@@ -277,18 +281,18 @@ button.btn-link {
 }
 
 .accordion-item {
-  background-color: #F1E6D0;
+  background-color: #f1e6d0;
   border-radius: 13px;
   margin-bottom: 15px;
 }
 
 .accordion-button {
-  background-color: #F1E6D0;
+  background-color: #f1e6d0;
   border-radius: 13px;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #F1E6D0;
+  background-color: #f1e6d0;
   border-radius: 13px;
   color: #07323f;
   border: none;
@@ -333,12 +337,3 @@ button.btn-link {
     font-size: 14px;
   }
 }
-
-
-
-
-
-
-
-
-
