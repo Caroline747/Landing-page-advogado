@@ -50,7 +50,9 @@ main {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
 }
+
 .navbar ul li a:hover {
   text-decoration: none;
   color: #3a9d98;
@@ -83,7 +85,6 @@ button a {
   color: #fff;
   text-align: center;
   padding: 3rem 1rem 4rem;
-  gap: 5px;
 }
 
 .hero h1 {
@@ -99,19 +100,39 @@ button a {
 
 .advantage-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: none;
-  padding-top: 25%;
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.03);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  min-height: 220px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .icones {
-  font-size: 1.5rem !important;
-  margin-bottom: 15px;
+  font-size: 2rem !important;
+  margin-bottom: 12px;
   background-color: #3a9d98;
-  border-radius: 30%;
-  padding: 15px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 18px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  padding: 0;
 }
 
 /* Página Sobre Nosso Serviço */
@@ -329,6 +350,24 @@ button.btn-link {
   }
   .logo {
     max-height: 45px;
+  }
+
+  .btn {
+    width: 200px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Espaçamento e ajuste dos cards em mobile */
+  .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  .advantage-card {
+    min-height: 180px;
   }
 }
 
